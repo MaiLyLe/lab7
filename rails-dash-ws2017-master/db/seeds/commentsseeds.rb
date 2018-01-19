@@ -1,0 +1,20 @@
+p1 = Pumpkin.create(species: 'Pumpkin with comments', carved: false, size: 5, weight: 7, price: 13)
+p1.comments.create(title:"Best Pumpkin", content: "This is a really delicious pumpkin")
+p1.comments.create(title:"Hard to carve", content: "The shape makes it difficult to carve for Halloween")
+p1.comments.create(title:"Colorful", content: "This pumpkin is very bright")
+p1.comments.create(title:"Please buy", content: "Please buy this pumpkin... we're broke")
+
+p2 = Pumpkin.create(species: 'A comment testing', carved: true, size: 19, weight: 20, price: 34)
+p2.comments.create(title:"Text", content: "This is where a comment will be")
+
+p2.comments.create(title:"work", content: "This should work")
+
+p3 = Pumpkin.create(species: 'Alphabetictest', carved: true, size: 19, weight: 20, price: 34)
+p3.comments.create(title:"A", content: "aaa")
+p3.comments.create(title:"B", content: "bbb")
+p3.comments.create(title:"C", content: "ccc")
+p3.comments.create(title:"D", content: "ddd")
+p3.comments.create(title:"E", content: "eee")
+p3.comments.create(title:"F", content: "fff")
+p1.comments.create(title:"testing the creation order", content: "creation order")
+p3.comments.create(title:"testing the creation order", content: "creation order")
